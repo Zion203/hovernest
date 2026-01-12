@@ -84,7 +84,7 @@ const Home = () => {
               <div className="absolute -inset-4 bg-gradient-to-r from-[#6E44FF] to-[#A78BFA] rounded-3xl opacity-20 blur-2xl group-hover:opacity-30 transition-opacity duration-500"></div>
               <div className="relative bg-gradient-to-br from-gray-800/50 to-gray-900/50 backdrop-blur-sm rounded-3xl p-8 border border-white/10">
                 <img
-                  src="https://customer-assets.emergentagent.com/job_0afa4b6f-648f-43be-9f28-1ca6171a4f9c/artifacts/b2cxdf30_vtol.png"
+                  src="/vtol.jpeg"
                   alt="Hovernest Multipurpose VTOL"
                   className="w-full h-auto transform group-hover:scale-105 transition-transform duration-500"
                 />
