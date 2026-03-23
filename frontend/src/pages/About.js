@@ -490,7 +490,7 @@ const TEAM = [
   {
     name: "Likhitha Uppu",
     role: "Chief Technology Officer",
-    org: "Founder @ Zyxen (300+ products)",
+    org: "Founder @ Zyxen",
     bio: "Leads system architecture, robotics development, and execution systems across Hovernest's full engineering stack.",
     linkedin: "https://www.linkedin.com/in/likhitha-uppu-a38277370/",
     linkedinImage: "/profile/lik.png",
