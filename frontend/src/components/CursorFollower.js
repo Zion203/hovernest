@@ -208,6 +208,9 @@ export default function CursorFollower() {
 }
 
 function CursorInner() {
+  const HOTSPOT_X = 24;
+  const HOTSPOT_Y = 24;
+
   const cursorX = useMotionValue(-200);
   const cursorY = useMotionValue(-200);
   const [variant, setVariant] = useState("default");
@@ -294,8 +297,8 @@ function CursorInner() {
 
       {/* Drone */}
       <motion.div
-        style={{ x, y }}
-        className="pointer-events-none fixed z-[9999] -translate-x-1/2 -translate-y-1/2"
+        style={{ x, y, translateX: -HOTSPOT_X, translateY: -HOTSPOT_Y }}
+        className="pointer-events-none fixed z-[9999]"
         animate={{
           scale: droneScale,
           opacity: isClick ? 0.75 : 1,

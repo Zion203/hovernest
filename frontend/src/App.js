@@ -5,6 +5,7 @@ import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
 import CursorFollower from "./components/CursorFollower";
+import SeoManager from "./components/SeoManager";
 import Home from "./pages/Home";
 import Products from "./pages/Products";
 import Services from "./pages/Services";
@@ -83,6 +84,7 @@ function App() {
       <BrowserRouter>
         <CursorFollower />
         <ScrollToTop />
+        <SeoManager />
         <Navigation />
         <Routes>
           <Route path="/" element={<Home />} />

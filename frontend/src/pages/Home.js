@@ -363,7 +363,7 @@ export default function Home() {
       {/* ── PRODUCT LINEUP ────────────────────────────────────────────────── */}
       <section className="py-20 md:py-28 bg-white">
         <div className="mx-auto max-w-7xl px-6 sm:px-10 lg:px-16">
-          <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-6 mb-12">
+          <div className="mb-12">
             <Reveal>
               <p
                 className="mb-2 text-sm font-semibold uppercase tracking-[0.2em]"
@@ -601,9 +601,7 @@ export default function Home() {
               >
                 Purpose-Built Solutions
               </h2>
-            </Reveal>
-            <Reveal>
-              <p className="text-base text-slate-400 max-w-[32ch] leading-relaxed sm:text-right">
+              <p className="mt-4 text-base text-slate-400 max-w-[32ch] leading-relaxed">
                 One platform architecture deployed across healthcare,
                 agriculture, and public safety.
               </p>
@@ -616,7 +614,7 @@ export default function Home() {
               const useContainedFrame = [
                 "Medical Logistics",
                 "Smart Agriculture",
-                "Industrial Inspection",
+                "Inspection & Reconnaissance",
               ].includes(useCase.title);
               return (
                 <Reveal
