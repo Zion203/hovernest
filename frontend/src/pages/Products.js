@@ -218,22 +218,27 @@ const Products = () => {
 
       {/* ── STICKY PRODUCT NAV ────────────────────────────────────────────── */}
       <nav className="bg-white border-b border-slate-200 sticky top-0 z-40">
-        <div className="mx-auto max-w-7xl px-6 sm:px-10 lg:px-16">
+        <div className="mx-auto max-w-7xl px-6 sm:px-10 lg:px-16 relative">
+          <p className="pt-1 text-[10px] font-mono tracking-[0.16em] uppercase text-slate-400 text-right">
+            Scroll
+          </p>
           <div
-            className="flex overflow-x-auto gap-0"
+            className="grid grid-flow-col auto-cols-max overflow-x-auto"
             style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
           >
             {products.map((product) => (
               <a
                 key={product.id}
                 href={`#${product.id}`}
-                className="flex-shrink-0 px-4 py-3.5 text-base font-semibold uppercase tracking-[0.12em] text-slate-400 hover:text-slate-900 border-b-2 border-transparent hover:border-slate-800 transition-all duration-150 whitespace-nowrap"
+                className="px-4 py-3.5 text-sm md:text-[13px] lg:text-sm font-semibold uppercase tracking-[0.1em] text-slate-400 hover:text-slate-900 border-b-2 border-transparent hover:border-slate-800 transition-all duration-150 whitespace-nowrap"
                 style={{ fontFamily: "'Barlow Condensed', sans-serif" }}
               >
                 {product.name}
               </a>
             ))}
           </div>
+          <div className="pointer-events-none absolute left-6 top-0 bottom-0 w-6 bg-gradient-to-r from-white to-transparent" />
+          <div className="pointer-events-none absolute right-6 top-0 bottom-0 w-10 bg-gradient-to-l from-white to-transparent" />
         </div>
       </nav>
 
