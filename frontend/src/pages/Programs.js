@@ -511,6 +511,7 @@ function Hero() {
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
           className="w-full h-8"
+          preserveAspectRatio="none"
         >
           <path d="M0 32 C480 0 960 32 1440 0 L1440 32 Z" fill="#f5f6f8" />
         </svg>

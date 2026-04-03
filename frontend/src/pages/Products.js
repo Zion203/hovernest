@@ -209,6 +209,7 @@ const Products = () => {
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
             className="w-full h-10"
+            preserveAspectRatio="none"
           >
             <path d="M0 40 C480 0 960 40 1440 0 L1440 40 Z" fill="#ffffff" />
           </svg>
