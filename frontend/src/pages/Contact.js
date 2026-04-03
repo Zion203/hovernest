@@ -138,11 +138,10 @@ function Hero() {
         style={{ minHeight: "44vh", paddingTop: "8rem", paddingBottom: "4rem" }}
       >
         <motion.div
-          className="inline-flex items-center gap-2.5 mb-6 px-3.5 py-1.5 border text-[12px] font-bold uppercase tracking-[0.24em] w-fit"
+          className="inline-flex items-center gap-2 mb-6 text-[11px] font-semibold uppercase tracking-[0.3em] w-fit"
           style={{
-            borderColor: `${ACCENT}40`,
             color: ACCENT,
-            backgroundColor: `${ACCENT}08`,
+            opacity: 0.9,
           }}
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}

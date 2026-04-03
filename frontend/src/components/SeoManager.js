@@ -154,7 +154,7 @@ export default function SeoManager() {
   useEffect(() => {
     const pathname = normalizePath(location.pathname);
     const meta = resolveMeta(pathname);
-    const pageTitle = `${meta.title} | ${SITE_NAME}`;
+    const pageTitle = SITE_NAME;
     const canonicalUrl = `${SITE_URL}${pathname}`;
     const robots = meta.robots || "index, follow";
 
