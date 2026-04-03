@@ -458,13 +458,17 @@ export default function Home() {
                     className="flex gap-6 border-b border-slate-100 py-8"
                   >
                     <div className="flex-shrink-0 pt-0.5">
-                      <div className="flex h-9 min-w-[3.2rem] items-center justify-center border border-slate-200 bg-slate-50 px-2">
+                      <div className="pt-1">
                         <span
-                          className="text-xs font-semibold uppercase tracking-[0.12em]"
-                          style={{ color: ACCENT, fontFamily: "'Barlow Condensed', sans-serif" }}
+                          className="text-xs font-semibold uppercase tracking-[0.16em]"
+                          style={{
+                            color: ACCENT,
+                            fontFamily: "'Barlow Condensed', sans-serif",
+                          }}
                         >
                           {pillarCode}
                         </span>
+                        <div className="mt-2 h-px w-10 bg-slate-200" />
                       </div>
                     </div>
                     <div className="flex-1 min-w-0">
