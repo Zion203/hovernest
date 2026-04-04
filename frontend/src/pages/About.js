@@ -542,8 +542,8 @@ function TeamCard({ member, delay, index }) {
           <motion.div
             className="group relative overflow-hidden bg-white rounded-2xl border border-slate-200 cursor-pointer transition-all duration-300"
             whileHover={{ boxShadow: "0 20px 60px rgba(0,0,0,0.15)", y: -4 }}
-            initial={{ opacity: 0, [isEven ? "x" : "-x"]: 40 }}
-            whileInView={{ opacity: 1, [isEven ? "x" : "-x"]: 0 }}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
             transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
           >
             {/* Accent bar */}
