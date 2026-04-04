@@ -175,7 +175,6 @@ function Hero() {
     target: ref,
     offset: ["start start", "end start"],
   });
-  const fadeOut = useTransform(scrollYProgress, [0, 0.6], [1, 0]);
   const slideY = useTransform(scrollYProgress, [0, 0.6], [0, -32]);
 
   return (
@@ -196,7 +195,6 @@ function Hero() {
 
       <motion.div
         style={{
-          opacity: fadeOut,
           y: slideY,
           minHeight: "56vh",
           paddingTop: "10rem",

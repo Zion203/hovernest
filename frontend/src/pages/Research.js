@@ -233,7 +233,6 @@ function Hero() {
     offset: ["start start", "end start"],
   });
   const imgY = useTransform(scrollYProgress, [0, 1], ["0%", "22%"]);
-  const fade = useTransform(scrollYProgress, [0, 0.65], [1, 0]);
   const slideY = useTransform(scrollYProgress, [0, 0.65], [0, -40]);
 
   const markers = [
@@ -376,7 +375,6 @@ function Hero() {
       {/* Main hero content */}
       <motion.div
         style={{
-          opacity: fade,
           y: slideY,
           minHeight: "100vh",
           paddingTop: "120px",

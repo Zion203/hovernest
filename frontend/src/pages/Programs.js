@@ -332,7 +332,6 @@ function Hero() {
     offset: ["start start", "end start"],
   });
   const imgY = useTransform(scrollYProgress, [0, 1], ["0%", "18%"]);
-  const textOpacity = useTransform(scrollYProgress, [0, 0.6], [1, 0]);
   const textY = useTransform(scrollYProgress, [0, 0.6], [0, -40]);
 
   const coords = [
@@ -421,7 +420,6 @@ function Hero() {
       {/* Main content */}
       <motion.div
         style={{
-          opacity: textOpacity,
           y: textY,
           minHeight: "100vh",
           paddingTop: "120px",

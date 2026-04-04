@@ -514,7 +514,6 @@ const BlogPost = () => {
     offset: ["start start", "end start"],
   });
   const imgY = useTransform(scrollYProgress, [0, 1], ["0%", "20%"]);
-  const fadeOut = useTransform(scrollYProgress, [0, 0.6], [1, 0]);
 
   /* 404 fallback */
   if (!post) {
@@ -586,7 +585,6 @@ const BlogPost = () => {
 
         <motion.div
           style={{
-            opacity: fadeOut,
             minHeight: "72vh",
             paddingTop: "8rem",
             display: "flex",
