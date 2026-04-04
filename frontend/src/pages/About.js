@@ -518,16 +518,6 @@ const TEAM = [
     initials: "SS",
     color: "#7c3aed",
   },
-  { 
-    name: "Kiran P",
-    role: "R&D / Full Stack Intern",
-    org: "Hovernest R&D Division",
-    bio: "Works on GenAI systems, cybersecurity hardening, and backend scalability for mission intelligence platforms.",
-    linkedin: "https://www.linkedin.com/in/kiran772/",
-    linkedinImage: "/profile/kiran.png",
-    initials: "KP",
-    color: "#7c3aed",
-  },
 ];
 
 function TeamCard({ member, delay, index }) {
