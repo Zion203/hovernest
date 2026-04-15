@@ -154,7 +154,17 @@ export default function SeoManager() {
   useEffect(() => {
     const pathname = normalizePath(location.pathname);
     const meta = resolveMeta(pathname);
-    const pageTitle = SITE_NAME;
+    let pageTitle = SITE_NAME;
+    if (pathname === "/") {
+      pageTitle = `${SITE_NAME} | AI VTOL Drone Systems`;
+    } else if (pathname === "/about") {
+      pageTitle = "About Hovernest | Autonomous Drone Innovation";
+    } else if (pathname === "/careers") {
+      pageTitle = "Careers at Hovernest | Drone Engineering Jobs";
+    } else if (meta.title) {
+      pageTitle = `${meta.title} | ${SITE_NAME}`;
+    }
+
     const canonicalUrl = `${SITE_URL}${pathname}`;
     const robots = meta.robots || "index, follow";
 
