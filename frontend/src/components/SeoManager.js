@@ -3,7 +3,7 @@ import { useLocation } from "react-router-dom";
 import { BLOG_POSTS } from "@/pages/Blog";
 
 const SITE_NAME = "Hovernest Private Limited";
-const SITE_URL = (process.env.REACT_APP_SITE_URL || "https://hovernest.com").replace(
+const SITE_URL = (process.env.REACT_APP_SITE_URL || "https://www.hovernest.com").replace(
   /\/$/,
   "",
 );
