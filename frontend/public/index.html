@@ -23,15 +23,24 @@
     <link rel="canonical" href="https://www.hovernest.com/" />
     <link rel="icon" href="%PUBLIC_URL%/hovernest-logo.png" />
     <script type="application/ld+json">
-            {
-                "@context": "https://schema.org",
-                "@type": "Organization",
-                "name": "Hovernest",
-                "url": "https://www.hovernest.com",
-                "logo": "https://www.hovernest.com/hovernest-logo.png",
-                "sameAs": []
-            }
-        </script>
+        {
+            "@context": "https://schema.org",
+            "@graph": [
+                {
+                    "@type": "WebSite",
+                    "name": "Hovernest Private Limited",
+                    "alternateName": "Hovernest",
+                    "url": "https://www.hovernest.com/"
+                },
+                {
+                    "@type": "Organization",
+                    "name": "Hovernest Private Limited",
+                    "url": "https://www.hovernest.com/",
+                    "logo": "https://www.hovernest.com/hovernest-logo.png"
+                }
+            ]
+        }
+    </script>
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
